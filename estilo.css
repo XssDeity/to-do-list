@@ -1,0 +1,120 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+:root{
+    --white:#fafafb;
+    --purple:#9a57ea;
+    --blue-light:#84d4c3;
+    --blue_dark:#2a73c2;
+    --green:#2c7b98;
+}
+
+body{
+    background: linear-gradient(to bottom,var(--purple),var(--blue-light));
+    height:100vh;
+    font-family:'Prompt',sans-serif;
+
+}
+
+.container{
+    width:400px;
+    height:600px;
+    margin:auto;
+}
+
+
+.perfil h1{
+    color:var(--white);
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+.perfil span{
+    color: var(--white);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#fecha{
+    color: var(--white);
+    text-align: right;
+    margin-top: 20px;
+    font-size: 12px;
+    padding:50px 0 5px 0;
+}
+
+.agregar-tarea{
+    background-color:var(--white);
+    border-radius: 15px;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    align-items:center; /*Achica el cuadrito de agregar una tarea*/
+    justify-content: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    gap: 70px;
+    margin:40px;
+}
+
+
+.agregar-tarea input{
+    width:100%;
+    height:100%;
+    border-radius:8px;
+    border:none;
+    background-color:var(--white);
+}
+
+/*icono*/
+.agregar-tarea i{
+    font-size:50px; /*para iconos usar font-size ya que width no detecta*/
+    color:var(--purple);
+}
+
+.agregar-tarea i:hover{
+    transform:scale(1,1);
+    cursor:pointer;
+}
+
+.agregar-tarea input::placeholder{
+    font-size:1.1rem;
+    color:var(--purple);
+}
+
+.seccion-tarea h3{
+    color:(--white);
+    margin-bottom:20px;
+
+}
+
+.seccion-tarea li{
+    display:flex;
+    align-items:center;
+    background:linner-gradient(to bottom,var(--blue-dark),var(--green));
+    border-radius:15px;
+    padding:10px;
+    align-items:center;
+    justify-content:space-between;
+    margin:5px 0;
+    color: var(--white);
+}
+
+.seccion-tarea i{
+    font-size:25px;
+
+}
+
+.seccion-tarea >ul p{
+    font-size:1.2rem;
+
+}
+
+.line-through{
+    text-decoration:line-through;
+    color: var(--blue-light);
+}
